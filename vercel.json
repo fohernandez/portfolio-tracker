@@ -14,5 +14,11 @@
   ],
   "env": {
     "VITE_ALPHA_VANTAGE_API_KEY": "${VITE_ALPHA_VANTAGE_API_KEY}"
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://www.alphavantage.co/query"
+    }
+  ]
 }
